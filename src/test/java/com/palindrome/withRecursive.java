@@ -27,7 +27,7 @@ class withRecursive {
     }
 
     boolean palindromeRecursiveV2(String word, int indexAwal) {
-        if (indexAwal < word.length()) {
+        if (indexAwal < word.length() / 2) {
             if (word.charAt(indexAwal) != (word.charAt(word.length() - indexAwal - 1))) {
                 return false;
             } else {
